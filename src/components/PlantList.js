@@ -1,10 +1,27 @@
-import React from "react";
-import PlantCard from "./PlantCard";
+import React from 'react';
 
-function PlantList() {
+const PlantList = ({ plants, onMarkSoldOut }) => {
   return (
-    <ul className="cards">{/* render PlantCards components in here */}</ul>
+    <div>
+      <h2>Plants List</h2>
+      <ul>
+        {plants.map((plant) => (
+          <li key={plant.id}>
+            <img src={plant.image} alt={plant.name} />
+            <h3>{plant.name}</h3>
+            <p>Price: ${plant.price}</p>
+
+            
+            {plant.soldOut ? (
+              <span style={{ color: 'red', fontWeight: 'bold' }}>Sold Out</span>
+            ) : (
+              <button onClick={() => onMarkSoldOut(plant.id)}>In stock</button>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
-}
+};
 
 export default PlantList;

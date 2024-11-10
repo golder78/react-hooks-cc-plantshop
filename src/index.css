@@ -10,6 +10,7 @@
 
 body {
   font-family: "Playfair Display", serif;
+  background-color: burlywood;
 }
 
 h2 {
@@ -134,4 +135,59 @@ input:focus {
   .card {
     width: calc(20% - 2rem);
   }
+}
+
+.app {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.plant-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+}
+
+.plant-form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.plant-form button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.plant-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #0a0a0a;
+  color: white;
+  border: none;
+  cursor: grabbing;
+}
+
+input[type="text"], input[type="number"] {
+  margin-bottom: 10px;
+  text-size-adjust: 30px;
 }
