@@ -10,7 +10,7 @@ function App() {
 
  
   useEffect(() => {
-    fetch('http://localhost:6001/plants')
+    fetch('https://react-hooks-cc-plantshop-wsa8.onrender.com/plants')
       .then((response) => response.json())
       .then((data) => {
         setPlants(data);
@@ -24,7 +24,7 @@ function App() {
 
   //new plant
   const handleAddPlant = (newPlant) => {
-    fetch('http://localhost:6001/plants', {
+    fetch('https://react-hooks-cc-plantshop-wsa8.onrender.com/plants', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function App() {
 
   // Update the price 
   const handleUpdatePrice = (id, newPrice) => {
-    fetch(`http://localhost:6001/plants/${id}`, {
+    fetch(`https://react-hooks-cc-plantshop-wsa8.onrender.com/plants/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ function App() {
   };
 //delete 
   const handleDeletePlant = (id) => {
-    fetch(`http://localhost:6001/plants/${id}`, {
+    fetch(`https://react-hooks-cc-plantshop-wsa8.onrender.com/plants/${id}`, {
       method: 'DELETE',
     })
       .then(() => {

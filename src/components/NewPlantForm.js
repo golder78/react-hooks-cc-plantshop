@@ -13,7 +13,7 @@ const NewPlantForm = ({ onAddPlant }) => {
       price: parseFloat(price),
     };
 
-    fetch('http://localhost:6001/plants', {
+    fetch('https://react-hooks-cc-plantshop-wsa8.onrender.com/plants', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
