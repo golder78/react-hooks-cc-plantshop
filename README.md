@@ -15,5 +15,5 @@ HTML, CSS AND JS
 ## Support and contact details
 email :: george.golder@student.moringaschool.com
 ### License
-LIcenced under 
+LIcenced under https://github.com/golder78/react-hooks-cc-plantshop/blob/master/LICENSE.md
 Copyright (c) 2024 *george  golder 
